@@ -15,7 +15,8 @@ public class Alumno {
     public void aprobar(Materia materia) {
         materiasAprobadas.add(materia);
     }
+
     public boolean cumpleCorrelativas(Materia materia) {
-        return materiasAprobadas.containsAll(materia.getMateriasCorrelativas());
+        return materia.correlativasEstanContenidasEn(materiasAprobadas);
     }
 }

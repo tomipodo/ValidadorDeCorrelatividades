@@ -18,4 +18,7 @@ public class Materia {
         materiasCorrelativas.add(materia);
     }
 
+    public boolean correlativasEstanContenidasEn(List<Materia> materias) {
+        return materias.containsAll(this.materiasCorrelativas);
+    }
 }
